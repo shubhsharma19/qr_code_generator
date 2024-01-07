@@ -45,8 +45,9 @@ Follow the prompts to enter the URL for your QR code. The generated QR code will
 
 ## Dependencies
 
-inquirer: A collection of common interactive command-line user interfaces.
-qr-image: A QR code generator for Node.js.
+[inquirer](https://www.npmjs.com/package/inquirer): A collection of common interactive command-line user interfaces.
+
+[qr-image](https://www.npmjs.com/package/qr-image): A QR code generator for Node.js.
 
 ## Contributing
 
