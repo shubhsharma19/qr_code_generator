@@ -10,9 +10,6 @@ User enters a valid URL and then gets an image of QR in png format for that part
 
 Make sure you have Node.js and npm installed on your machine.
 
-    Node.js
-    npm
-
 ## Installation
 
 1. Clone this repository:
@@ -29,7 +26,7 @@ cd qr-code-generator
 
 3. Install dependencies:
 ```bash 
-    npm install
+npm install inquirer qr-image
 ```
 
 ## Usage
