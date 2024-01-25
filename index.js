@@ -3,6 +3,7 @@ import qr from 'qr-image';
 import fs from 'fs/promises';
 
 const QR_CODE_SIZE = 4;
+const URL_REGEX = /^https?:\/\/.+/;
 
 const generateQRCode = (url, size) => {
     const qrImage = qr.image(url, { size });
@@ -19,8 +20,7 @@ const saveURLToFile = async (url) => {
 };
 
 const validateURL = (url) => {
-    // You can add more comprehensive URL validation logic here
-    return /^https?:\/\/.+/.test(url);
+    return URL_REGEX.test(url);
 };
 
 const main = async () => {
@@ -45,4 +45,5 @@ const main = async () => {
     }
 };
 
+// Call the main function
 main();
